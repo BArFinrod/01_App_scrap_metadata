@@ -68,6 +68,7 @@ df_links = pd.DataFrame(columns=['Links'])
 df_links_input = st.data_editor(df_links, num_rows='dynamic')#, hide_index=True)
 # df_links_input = df_links_input.rename({'Links                                                                                               ':'Links'}, axis=1)
 df_links_input = df_links_input.dropna()
+df_links_input.index = range(df_links_input.shape[0])
 
 if st.button('Get data'):
     df_main = pd.DataFrame()
