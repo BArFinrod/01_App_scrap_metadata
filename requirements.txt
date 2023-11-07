@@ -3,4 +3,4 @@ streamlit==1.27.2
 openpyxl==3.1.2
 xlsxwriter==3.1.8
 BeautifulSoup4==4.12.2
-json==2.0.9
+jsonlib==2.0.9
