@@ -70,6 +70,8 @@ df_links_input = st.data_editor(df_links, num_rows='dynamic', hide_index=True)
 df_links_input = df_links_input.dropna(subset=['Links'])
 df_links_input.index = range(df_links_input.shape[0])
 
+st.table(df_links_input)
+
 if st.button('Get data'):
     df_main = pd.DataFrame()
     dftables_main = pd.DataFrame()
